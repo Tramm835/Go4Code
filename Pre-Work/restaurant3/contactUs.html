@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/JavaScript" src="clickToAddItems.js"></script>
+		<link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<title>Contact Us</title>
+		<div id="restaurant">
+		<h1>Bob's Burgers</h1>
+		</div>
+			<hr />
+			<ul class="nav nav-pills" id="navigation">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="menu.html">Menu</a></li>
+			<li class="active"><a href="contactUs.html">Contact Us</a></li>
+			<hr />
+		</div>
+		<style>
+			label {
+				font-weight: bold;
+				font-size: 16px;
+				padding: 0px;	
+			}
+
+			.formContent {
+				text-align: right;
+			}
+			
+			#main {
+				background-color: lightgray;
+			}
+
+			input[type=text], textarea, select {
+				width: 200px;
+			}
+		</style>
+		</head>
+	<body>
+		<div id="main">
+			<table class="formContent">
+			<tr>
+				<form action="submit.html" method="POST">
+				<td><label for="fullName">Name:</label></td>
+				<td><input type="text" id="fullName" required></td>
+			</tr>
+			<tr>
+				<td><label for="email">Email:</label></td>
+				<td><input type="text" id="email" required></td>
+			</tr>
+			<tr>
+				<td><label for="phone">Phone:</label></td>
+				<td><input type="text" id="phone" required></td>
+			</tr>
+			<tr>
+				<td><label for="inquiry">Reason for Inquiry:</label></td>
+				<td><select id="inquiry">
+					<option value="default" selected>Catering</option>
+					<option value="party">Private Party</option>
+					<option value="feedback">Feedback</option>
+					<option value="other">Other</option>
+					</select></td>
+			</tr>
+			<tr>
+				<td><label for="addInfo">Additional Information:</label></td>
+				<td><textarea id="addInfo"></textarea></td>
+			</tr>
+			<tr>
+				<td><label for="visit">Have you been to the restaurant?</label></td>
+				<td align="left"><input type="radio" id="choice1" name="visit" value="no" checked>
+				<label for="choice1">No</label>
+				<input type="radio" id="choice2" name="visit" value="yes">
+				<label for="choice2">Yes</label></td>
+			</tr>
+			<tr>
+				<td><label for="day">Best days to contact you:</label></td>
+				<td><input type="checkbox" id="monday" name="day" value="M">
+				<label for="monday">M</label>
+				<input type="checkbox" id="tuesday" name="day" value="T">
+				<label for="tuesday">T</label>
+				<input type="checkbox" id="wednesday" name="day" value="W">
+				<label for="wednesday">W</label>
+				<input type="checkbox" id="thursday" name="day" value="Th">
+				<label for="thursday">Th</label>
+				<input type="checkbox" id="friday" name="day" value="F">
+				<label for="friday">F</label></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" id="submit" value="Send Request"></td>
+			</tr>
+				</form>
+			</table>
+		</div>
+		<div id="footer">
+			<hr />
+			<footer>
+				<p>1025 Farmer ST, Kent, WA, 98032</p>
+				<p>206-245-8543</p>
+			</footer>
+		</div>
+	</body>
+</html>

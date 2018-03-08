@@ -1,0 +1,64 @@
+/* Common elements across all pages */
+
+	body {
+		background-color: #d5d2cb; /* in flowers by kinkajou888 – colourlovers.com */			
+	}	
+	#restaurant {
+		font-family: Fantasy, Arial, Helvetica, sans-serif;
+		text-align: center;	
+	}
+	
+	.carousel-content {
+	margin: auto;
+	text-align: center;
+	}
+	
+	.jumbotron {
+		background-color: transparent !important;
+	}
+	
+	.nav {
+		class="nav nav-pills";
+	}
+	
+	#navigation {
+		font-family: Arial;
+	}
+	
+	hr {
+		border-top: 3px double #5b7d87; /*hush by oblivious – colourlovers.com */
+		border-bottom: 3px solid #5b7d87;
+	}
+	
+	ul {
+		
+		
+	}
+	
+	a {
+		font-family: serif;
+		padding-right: 30px;
+	}
+	
+	a:link {
+	}
+	
+	a:hover {
+		font-weight: bold;
+	}
+	
+	a:active {
+		text-decoration: none;
+	}
+		
+	a:visited {
+		color: blue;
+	}
+		
+	footer {
+		text-align: center;
+	}
+	
+	label {
+		font-weight: bold;
+	}
