@@ -1,44 +1,53 @@
 /* Common elements across all pages */
 
-	body {
-		background-color: #d5d2cb; /* in flowers by kinkajou888 – colourlovers.com */			
-	}	
+	#main {
+		background-color: #d5d2cb; /* in flowers by kinkajou888 – colourlovers.com */
+	}
+	
+	#content {
+		text-align: center;
+		width: 400px;
+		margin: 0 auto;
+	}
+	
+	/* Title */
 	#restaurant {
 		font-family: Fantasy, Arial, Helvetica, sans-serif;
 		text-align: center;	
 	}
-	#navigation {
-		font-family: Arial;
+	
+	/* Header */
+	.navigation {
+		font-family: serif;
 	}
+
+	.navigation a {
+		padding: 30px;
+	}
+	
+	.navigation a:link {
+		color: black;
+	}
+
+	.navigation a:visited {
+		color: teal;
+	}
+	
+	.navigation a:hover {
+		font-weight: bold;
+		color: blue;
+	}
+	
+	.navigation a:active {
+		text-decoration: none;
+	}
+			
+	/* Page breaks header and footer */
 	hr {
 		border-top: 3px double #5b7d87; /*hush by oblivious – colourlovers.com */
 		border-bottom: 3px solid #5b7d87;
 	}
-	
-	a {
-		font-family: serif;
-		padding: 30px;
-	}
-	
-	a:link {
-	}
-	
-	a:hover {
-		font-weight: bold;
-	}
-	
-	a:active {
-		text-decoration: none;
-	}
-		
-	a:visited {
-		color: blue;
-	}
 		
 	footer {
 		text-align: center;
-	}
-	
-	label {
-		font-weight: bold;
 	}

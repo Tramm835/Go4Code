@@ -4,9 +4,9 @@
 		<link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
 		<title>Menu</title>
 		<div id="restaurant">
-		<h1>Bob's Burgers</h1>
+			<h1>Bob's Burgers</h1>
 		</div>
-		<div id="navigation">
+		<div class="navigation">
 			<hr />
 			<a href="index.html">Home</a>
 			<a href="menu.html">Menu</a>
@@ -14,21 +14,29 @@
 			<hr />
 		</div>
 		<style>
+			#menu {
+				background-color: lightBlue;
+			}	
+			
 			.content, .drinks {
 				text-align: center;
 			}		
 			
-			th {
+			th, caption {
 				font-weight: bold;
 				font-size: 20px;
 				padding: 20px;
 			}
+
 			td {
 				padding: 0px 40px;
 			}
-			#main {
-				background-color: lightBlue;
-			}		
+			
+			.drinks {
+				width: 325px;
+				margin: 0 auto;
+				text-align: left;
+			}
 		</style>
 	</head>
 	<body>
@@ -70,9 +78,7 @@
 				</div>
 				<div class="drinks">
 					<table>
-						<tr>
-							<th colspan="2">Beverages</th>
-						</tr>
+							<caption>Beverages</caption>
 						<tr>
 							<td>Root Beer</td>
 							<td>$3.00</td>

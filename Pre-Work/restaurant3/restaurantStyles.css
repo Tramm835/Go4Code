@@ -1,62 +1,68 @@
 /* Common elements across all pages */
 
+	.jumbotron {
+		background-color: transparent !important;
+	}
+	
 	body {
-		background-color: #d5d2cb; /* in flowers by kinkajou888 – colourlovers.com */			
+		background-color: #d5d2cb; /* in flowers by kinkajou888 – colourlovers.com */
 	}	
+	
+	/* body { */
+		/* background-color: #d5d2cb; /* in flowers by kinkajou888 – colourlovers.com */			 */
+	/* }	 */
+	
+	#content {
+		text-align: center;
+		width: 400px;
+		margin: 0 auto;
+	}	
+	
 	#restaurant {
 		font-family: Fantasy, Arial, Helvetica, sans-serif;
 		text-align: center;	
 	}
 	
 	.carousel-content {
-	margin: auto;
-	text-align: center;
-	}
-	
-	.jumbotron {
-		background-color: transparent !important;
+		margin: auto;
+		text-align: center;
 	}
 	
 	.nav {
-		class="nav nav-pills";
-	}
-	
-	#navigation {
 		font-family: Arial;
-	}
-	
-	hr {
-		border-top: 3px double #5b7d87; /*hush by oblivious – colourlovers.com */
-		border-bottom: 3px solid #5b7d87;
-	}
-	
-	ul {
-		
 		
 	}
 	
-	a {
-		font-family: serif;
-		padding-right: 30px;
-	}
+	/* .glyphicon { */
+		/* class: glyphicon glyphicon-home; */
+	/* } */
+		
+	/* ul { */
+		
+	/* } */
 	
-	a:link {
+	.nav a:link {
 	}
-	
-	a:hover {
+		
+	.nav a:visited {
+		color: blue;
+	}
+
+	.nav a:hover {
 		font-weight: bold;
 	}
 	
-	a:active {
+	.nav a:active {
 		text-decoration: none;
-	}
-		
-	a:visited {
-		color: blue;
 	}
 		
 	footer {
 		text-align: center;
+	}
+
+	hr {
+		border-top: 3px double #5b7d87; /*hush by oblivious – colourlovers.com */
+		border-bottom: 3px solid #5b7d87;
 	}
 	
 	label {

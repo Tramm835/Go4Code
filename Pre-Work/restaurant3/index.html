@@ -3,83 +3,87 @@
 	<head>
 		<title>Bob's Burgers</title>
 		<noscript>JavaScript is off. This site is best viewed with JavaScript enabled</noscript>
-		<link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
-		<script type="text/JavaScript" src="clickToAddItems.js"></script>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
 		<div id="restaurant">
-		<h1>Bob's Burgers</h1>
+			<h1>Bob's Burgers</h1>
 		</div>
-			<hr />
-			<ul class="nav nav-pills" id="navigation">
-			<li class="active"><a href="index.html" class="glyphicon glyphicon-home"> Home</a></li>
+		<hr />
+		<ul class="nav nav-pills">
+			<li class="active"><a href="index.html" class="glyphicon glyphicon-home"></a></li>
 			<li><a href="menu.html">Menu</a></li>
 			<li><a href="contactUs.html">Contact Us</a></li>
-			<hr />
 		</ul>
-		</head>
+		<hr />
+	</head>
 	<body>
-		<div id="main" style="background-color: Aqua;">
-			<div id="description" align="center"">
-				<div class="image"><img src="images/burger.png" alt="Photo of Restaurant" width="20%" /></div>
-				<div class="content">
-				<table>
-				<tr>
-				<td width="300px">
-				Come enjoy the best meat on the market at Bob's Burgers. Enjoy our many different varieties of burgers or relax with a nice cold shake. Feeling tired, we offer coffee free with purchase of any meal. Our seating is comfortable and designed with tables spaced out for your privacy. Come work while you eat and make a day of it. We have competitive pricing and offer free wifi. At Bob's Burgers we offer only the best.</td></tr></table></div>
-		</div>
-		<div class="jumbotron">
-			<div class="container">
-			  <br>
-			  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-				<!-- Indicators -->
-				<ol class="carousel-indicators">
-				  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-				  <li data-target="#myCarousel" data-slide-to="1"></li>
-				  <li data-target="#myCarousel" data-slide-to="2"></li>
-				</ol>
-
-				<!-- Wrapper for slides -->
-				<div class="carousel-inner" role="listbox">
-
-				  <div class="item active">
-					<div class="carousel-content">
-					  <p>We're opening a new location!</p>
-					</div>
-				  </div>
-
-				  <div class="item">
-					<div class="carousel-content">
-					  <p>We're rolling out our seasonal menu, with special options for this season.</p>
-					</div>
-				  </div>
-				
-				  <div class="item">
-					<div class="carousel-content">
-					  <p>The Drink of the Month is SG Special Brew.</p>
-					</div>
-				  </div>		  
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-4"></div>
+				<div class="col-xs-4"><img src="images/burger.png" alt="Photo of Restaurant" width="100%"/></div>
+				<div class="col-xs-4"></div>
+			</div>				
+			<div class="row lead"></div>
+			<div class="row lead">
+				<div class="col-xs-4"></div>
+				<div class="col-xs-4 bg">
+					Come enjoy the best meat on the market at Bob's Burgers. Enjoy our many different varieties of burgers or relax with a nice cold shake. Feeling tired, we offer coffee free with purchase of any meal. Our seating is comfortable and designed with tables spaced out for your privacy. Come work while you eat and make a day of it. We have competitive pricing and offer free wifi. At Bob's Burgers we offer only the best.
 				</div>
-
-				<!-- Left and right controls -->
-				<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-				  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-				  <span class="sr-only">Previous</span>
-				</a>
-				<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-				  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-				  <span class="sr-only">Next</span>
-				</a>
-			  </div>
+				<div class="col-xs-4"></div>
 			</div>
-		</div>
-		<div id="footer" align="center">
-			<hr />
-			<footer>
-				<p>1025 Farmer ST, Kent, WA, 98032</p>
-				<p>206-245-8543</p>
-			</footer>
+			<div class="row bg-success">
+				<div id="myCarousel" class="carousel slide jumbotron col-sx-12" data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>
+					</ol>
+
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner" role="listbox">
+
+					  <div class="item active">
+						<div class="carousel-content">
+							<p>We're opening a new location!</p>
+						</div>
+					  </div>
+
+					  <div class="item">
+						<div class="carousel-content">
+							<p>We're rolling out our seasonal menu, with special options for this season.</p>
+						</div>
+					  </div>
+
+					  <div class="item">
+						<div class="carousel-content">
+							<p>The Drink of the Month is SG Special Brew.</p>
+						</div>
+					  </div>		  
+					</div>
+
+					<!-- Left and right controls -->
+					<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					</a>
+					<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					</a>
+				</div>
+			</div>
+			<div id="footer" class="row">
+				<div class="col-xs-12">
+					<hr />
+					<footer>
+						<p>1025 Farmer ST, Kent, WA, 98032</p>
+						<p>206-245-8543</p>
+					</footer>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>

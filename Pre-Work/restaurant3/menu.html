@@ -1,105 +1,175 @@
 <!DOCTYPE html>
 <html>
 	<head id="head">
-		<script type="text/JavaScript" src="clickToAddItems.js"></script>
-		<link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
 		<title>Menu</title>
 		<div id="restaurant">
-		<h1>Bob's Burgers</h1>
+			<h1>Bob's Burgers</h1>
 		</div>
-			<hr />
-			<ul class="nav nav-pills" id="navigation">
-			<li><a href="index.html">Home</a></li>
+		<hr />
+		<ul class="nav nav-pills">
+			<li><a href="index.html" class="glyphicon glyphicon-home"></a></li>
 			<li class="active"><a href="menu.html">Menu</a></li>
 			<li><a href="contactUs.html">Contact Us</a></li>
-			<hr />
+		</ul>
+		<hr />
 		<style>
 			.content, .drinks {
 				text-align: center;
 			}		
 			
-			th {
+			th, caption {
 				font-weight: bold;
 				font-size: 20px;
 				padding: 20px;
 			}
+
 			td {
 				padding: 0px 40px;
 			}
-			#main {
-				background-color: lightBlue;
-			}		
+		
+			.drinks {
+				width: 325px;
+				margin: 0 auto;
+				text-align: left;
+			}
+
+			.bg-primary {
+				font-weight: bold;
+				font-size: 20px;
+			}
 		</style>
 	</head>
 	<body>
-		<div id="main">
-			<div id="menu">
-				<div class="content">
-					<table>
-						<tr>
-							<th>Burger and Fries</th>
-							<th>Sandwiches</th>
-							<th>Salads</th>
-						</tr>
-						<tr>
-							<td>Classic burger with fries loaded with bacon cheese and tomato. Comes with 2 side dishes</td>
-							<td>Turkey bacon sandwich with lettuce, tomato, and pickles. Comes with 1 side dish</td>
-							<td>Garden salad with ranch dressing topped with a variety of cheese of your choice. Buy 2 and get 1 half price</td>
-						</tr>
-						<tr>
-							<td>$6.99</td>
-							<td>$4.99</td>
-							<td>$4.99</td>
-						</tr>
-						<tr>
-							<th>Shakes</th>
-							<th>Specialty Dishes</th>
-							<th>Appetizers</th>
-						</tr>
-						<tr>
-							<td>Best shakes with choices of chocolage, vanilla, and strawberry</td>
-							<td>Squid served with a side of shrimp. Comes with 2 side dishes</td>
-							<td>Onion Rings, curly fries, regular fries, nachos</td>				
-						</tr>
-						<tr>
-							<td>$1.99</td>
-							<td>$13.99</td>
-							<td>$3.99</td>
-						</tr>
-					</table>
-				</div>
-				<div class="drinks">
-					<table>
-						<tr>
-							<th colspan="2">Beverages</th>
-						</tr>
-						<tr>
-							<td>Root Beer</td>
-							<td>$3.00</td>
-						</tr>
-						<tr>
-							<td>Bottled Water</td>
-							<td>$1.25</td>
-						</tr>
-						<tr>
-							<td>Lemonade</td>
-							<td>$1.00</td>
-						</tr>
-						<tr>
-							<td>Iced Tea</td>
-							<td>$1.25</td>
-						</tr>
-					</table>
+		<div class="container-fluid content">
+			<div class="row bg-primary">
+				<div class="col-lg-4">Burger and Fries</div>
+				<div class="col-lg-4">Sandwiches</div>
+				<div class="col-lg-4">Salads</div>
+			</div>
+			<div class="row bg-success">
+				<div class="col-lg-4">Classic burger with fries loaded with bacon cheese and tomato. Comes with 2 side dishes</div>
+				<div class="col-lg-4">Turkey bacon sandwich with lettuce, tomato, and pickles. Comes with 1 side dish</div>
+				<div class="col-lg-4">Garden salad with ranch dressing topped with a variety of cheese of your choice. Buy 2 and get 1 half price</div>
+			</div>
+			<div class="row bg-info">
+				<div class="col-lg-4">$6.99</div>
+				<div class="col-lg-4">$4.99</div>
+				<div class="col-lg-4">$4.99</div>
+			</div>
+			<div class="row row-margin-10"><h1></h1></div>
+			<div class="row bg-primary">
+				<div class="col-lg-4">Shakes</div>
+				<div class="col-lg-4">Specialty Dishes</div>
+				<div class="col-lg-4">Appetizers</div>
+			</div>
+			<div class="row bg-success">
+				<div class="col-lg-4">Best shakes with choices of chocolage, vanilla, and strawberry</div>
+				<div class="col-lg-4">Squid served with a side of shrimp. Comes with 2 side dishes</div>
+				<div class="col-lg-4">Onion Rings, curly fries, regular fries, nachos</div>
+			</div>
+			<div class="row bg-info">
+				<div class="col-lg-4">$1.99</div>
+				<div class="col-lg-4">$13.99</div>
+				<div class="col-lg-4">$3.99</div>
+			</div>
+			<div class="row row-margin-10"><h1></h1></div>
+			<div class="row">
+				<div class="col-lg-4"></div>
+				<div class="col-lg-4 bg-primary">Beverages</div>
+				<div class="col-lg-4"></div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4"></div>
+				<div class="col-lg-2 bg-success">Root Beer</div>
+				<div class="col-lg-2 bg-info">$3.00</div>				
+				<div class="col-lg-4"></div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4"></div>
+				<div class="col-lg-2 bg-success">Bottled Water</div>
+				<div class="col-lg-2 bg-info">$1.25</div>				
+				<div class="col-lg-4"></div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4"></div>
+				<div class="col-lg-2 bg-success">Lemonade</div>
+				<div class="col-lg-2 bg-info">$1.00</div>				
+				<div class="col-lg-4"></div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4"></div>
+				<div class="col-lg-2 bg-success">Iced Tea</div>
+				<div class="col-lg-2 bg-info">$1.25</div>				
+				<div class="col-lg-4"></div>
+			</div>
+			<!-- <div class="content"> -->
+					<!-- <table> -->
+						<!-- <tr> -->
+							<!-- <th>Burger and Fries</th> -->
+							<!-- <th>Sandwiches</th> -->
+							<!-- <th>Salads</th> -->
+						<!-- </tr> -->
+						<!-- <tr> -->
+							<!-- <td>Classic burger with fries loaded with bacon cheese and tomato. Comes with 2 side dishes</td> -->
+							<!-- <td>Turkey bacon sandwich with lettuce, tomato, and pickles. Comes with 1 side dish</td> -->
+							<!-- <td>Garden salad with ranch dressing topped with a variety of cheese of your choice. Buy 2 and get 1 half price</td> -->
+						<!-- </tr> -->
+						<!-- <tr> -->
+							<!-- <td>$6.99</td> -->
+							<!-- <td>$4.99</td> -->
+							<!-- <td>$4.99</td> -->
+						<!-- </tr> -->
+						<!-- <tr> -->
+							<!-- <th>Shakes</th> -->
+							<!-- <th>Specialty Dishes</th> -->
+							<!-- <th>Appetizers</th> -->
+						<!-- </tr> -->
+						<!-- <tr> -->
+							<!-- <td>Best shakes with choices of chocolage, vanilla, and strawberry</td> -->
+							<!-- <td>Squid served with a side of shrimp. Comes with 2 side dishes</td> -->
+							<!-- <td>Onion Rings, curly fries, regular fries, nachos</td>				 -->
+						<!-- </tr> -->
+						<!-- <tr> -->
+							<!-- <td>$1.99</td> -->
+							<!-- <td>$13.99</td> -->
+							<!-- <td>$3.99</td> -->
+						<!-- </tr> -->
+					<!-- </table> -->
+				<!-- </div> -->
+				<!-- <div class="drinks"> -->
+					<!-- <table> -->
+							<!-- <caption>Beverages</caption> -->
+						<!-- <tr> -->
+							<!-- <td>Root Beer</td> -->
+							<!-- <td>$3.00</td> -->
+						<!-- </tr> -->
+						<!-- <tr> -->
+							<!-- <td>Bottled Water</td> -->
+							<!-- <td>$1.25</td> -->
+						<!-- </tr> -->
+						<!-- <tr> -->
+							<!-- <td>Lemonade</td> -->
+							<!-- <td>$1.00</td> -->
+						<!-- </tr> -->
+						<!-- <tr> -->
+							<!-- <td>Iced Tea</td> -->
+							<!-- <td>$1.25</td> -->
+						<!-- </tr> -->
+					<!-- </table> -->
+				<!-- </div> -->
+			<!-- </div> -->
+			<div id="footer" class="row">
+				<div class="col-xs-12">
+					<hr />
+					<footer>
+						<p>1025 Farmer ST, Kent, WA, 98032</p>
+						<p>206-245-8543</p>
+					</footer>
 				</div>
 			</div>
-		</div>
-		<div id="footer">
-			<hr />
-			<footer>
-				<p>1025 Farmer ST, Kent, WA, 98032</p>
-				<p>206-245-8543</p>
-			</footer>
 		</div>
 	</body>
 </html>
